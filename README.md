@@ -1,4 +1,4 @@
-# xtomcat-http-server
+# xredis
 基于jedis封装超级易用工具，支持横向扩展
 
 简介
@@ -8,7 +8,8 @@
 
 初始化服务
 
-```properties
+application.properties
+```
 	redis.status=1
 
 	redis.pool.maxActive=1024
@@ -31,7 +32,7 @@
 	redis.node2.pass=iQ6dSxzGfg
 	redis.node2.db=2
 ```
-
+java
 ```java
 	Properties properties = new Properties();
 	InputStream is = Object.class.getResourceAsStream(configFile);
